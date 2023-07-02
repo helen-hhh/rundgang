@@ -1,33 +1,37 @@
 <script lang="ts" setup>
 
-import ellipseElement from './assets/ellipseElement.vue'
-import tableEntry from './tableEntry.vue';
-import menuView from './menuView.vue'
-import smallEllipse from './assets/smallEllipse.vue'
+import EllipseElement from '../components/EllipseElement.vue'
+import TableEntry from '../components/TableEntry.vue';
+import SmallEllipse from '../components/SmallEllipse.vue'
+import router from '@/router';
+function route(name: string) {
+    router.push('/' + name);
+}
+
 </script>
 
 <template>
     <div class="body">
         <div class="titleRundgang">
-            <ellipseElement></ellipseElement>
+            <EllipseElement></EllipseElement>
             <h1>Rundgang</h1>
         </div>
         <div class="tableOfContent">
             <div class="tableHead">
                 <div class="projectName">
-                    <smallEllipse></smallEllipse>
+                    <SmallEllipse></SmallEllipse>
                     Project Name
                 </div>
                 <div class="projectType">
-                    <smallEllipse></smallEllipse>
+                    <SmallEllipse></SmallEllipse>
                     Type
                 </div>
             </div>
-            <tableEntry projectName="Smile" typeName="Creative Coding"></tableEntry>
-            <tableEntry projectName="Hidden Stories Museum" typeName="UX/UI Design"></tableEntry>
-            <tableEntry projectName="How is our soil doing?" typeName="Infographic"></tableEntry>
-            <tableEntry projectName="Reise ans Ende des Bettes" typeName="Poetic Coding"></tableEntry>
-            <tableEntry projectName="Underwater" typeName="Creative Coding"></tableEntry>√
+            <TableEntry @click="route('smile')" projectName="Smile" typeName="Creative Coding"></TableEntry>
+            <TableEntry @click="route('hidden')" projectName="Hidden Stories Museum" typeName="UX/UI Design"></TableEntry>
+            <TableEntry @click="route('soil')" projectName="How is our soil doing?" typeName="Infographic"></TableEntry>
+            <TableEntry @click="route('bed')" projectName="Reise ans Ende des Bettes" typeName="Poetic Coding"></TableEntry>
+            <TableEntry @click="route('underwater')" projectName="Underwater" typeName="Creative Coding"></TableEntry>
         </div>
 
     </div>
