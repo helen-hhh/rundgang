@@ -11,6 +11,7 @@ const props = defineProps(['name'])
 
 <style scoped>
 .tableEntryComponent {
+  cursor: pointer;
   display: flex;
   color: #1d3e0c;
   font-size: 1.75rem;
@@ -24,6 +25,10 @@ const props = defineProps(['name'])
   border-bottom: 2px solid #1d3e0c;
   margin-top: -2px;
   position: relative;
+}
+.tableEntryComponent:hover {
+  background-color: #1d3e0c;
+  color: #fcfaf4;
 }
 
 .viewButton {

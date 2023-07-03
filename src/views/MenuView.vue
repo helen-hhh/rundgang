@@ -19,7 +19,7 @@ function hide() {
 
 <template>
   <div v-if="show" class="menuBody">
-    <EllipseElement @click="hide()"></EllipseElement>
+    <EllipseElement class="point" @click="hide()"></EllipseElement>
     <div class="contentTable">
       <div class="tableHead">
         <div class="projectName">
@@ -34,11 +34,15 @@ function hide() {
     </div>
   </div>
   <div v-else>
-    <EllipseElement class="margin" @click="hide()"></EllipseElement>
+    <EllipseElement class="margin point" @click="hide()"></EllipseElement>
   </div>
 </template>
 
 <style scoped>
+.point {
+  cursor: pointer;
+}
+
 .menuBody {
   margin: 0%;
   width: 50vw;
