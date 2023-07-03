@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: MainView
+      component: SmileView
     },
     {
       path: '/smile',

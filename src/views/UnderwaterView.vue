@@ -1,5 +1,13 @@
 <script lang="ts" setup></script>
 
 <template>
-    <iframe src="https://editor.p5js.org/helen.hhh/full/4kHFDIAQc" width="1000px" height="600px"></iframe>
+  <iframe src="./index_underwater.html"></iframe>
 </template>
+
+<style scoped>
+iframe {
+  border: none;
+  width: 100vw;
+  height: 100vh;
+}
+</style>

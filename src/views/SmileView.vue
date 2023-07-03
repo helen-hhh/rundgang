@@ -1,6 +1,12 @@
-<script lang="ts" setup>
-</script>
-
+<script lang="ts" setup></script>
 <template>
-    <iframe src="https://editor.p5js.org/helen.hhh/full/QTZO7hsfv" width="500px" height="500px"></iframe>
+  <iframe src="./index_smile.html"></iframe>
 </template>
+
+<style scoped>
+iframe {
+  border: none;
+  width: 100vw;
+  height: 100vh;
+}
+</style>

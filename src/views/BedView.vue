@@ -1,3 +1,13 @@
 <script setup lang="ts"></script>
 
-<template></template>
+<template>
+  <iframe src="./index_bed.html"></iframe>
+</template>
+
+<style scoped>
+iframe {
+  border: none;
+  width: 100vw;
+  height: 100vh;
+}
+</style>

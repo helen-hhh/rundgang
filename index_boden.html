@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wie steht es um Leipzigs Böden?</title>
+    <link rel="stylesheet" href="style_boden.css" />
+    <script src="main_boden.js" defer></script>
+  </head>
+
+  <body>
+    <div class="article" id="overlay">
+      <div onclick="off()">
+        <button onclick="on()"><img class="side" src="/legende.png" alt="index button" /></button>
+      </div>
+      <div class="text">
+        <span class="wie">Wie</span><br /><span class="steht">steht es</span><br /><span
+          class="Leipzig"
+          >um Leipzigs</span
+        ><br /><span class="boden">Böden?</span>
+        <p>
+          Der vergangene August ist der dürrste seit 70 Jahren. Auch dieses Jahr wird die prekäre
+          Lage um Deutschlands Böden wieder sichtbar. Anhand der Tatsache, dass die statistisch
+          gesehen dürrsten vier August-Monate in den vergangenen fünf Jahren auftraten, wird immer
+          deutlicher, dass die Klimakatastrophe nicht nur ein Problem der Zukunft ist, sondern uns
+          heute schon ganz konkret betrifft. Durch die enorme Dürre steigt die Hochwassergefahr,
+          Ernten fallen aus und viele Pflanzen sterben ab. Das Umweltforschungszentrum (UfZ)
+          zeichnet bereits seit 1951 Daten über den Boden in Deutschland auf. In meinem Projekt sind
+          die Daten vom Landkreis Leipzig zu sehen, da ich hier von den Konsequenzen selbst
+          betroffen war.
+          <br />
+          <br />
+          Das UfZ kategorisierte seine Daten in 5 Abstufungen, von “Ungewöhnliche Trockenheit” bis
+          “Außergewöhnliche Dürre”. Diesen habe ich jeweils eine Farbe zugewiesen und die Intensität
+          dieser davon abhängig gemacht wie hoch die Daten ausgefallen sind. Je dunkler also die
+          angezeigte Farbe, desto schlimmer steht es um den Boden.
+          <br />
+          <br />
+          Wenn du wissen möchtest, wie die Situation in deiner Region aussieht, schau auf
+          <a
+            href="https://www.zeit.de/wissen/2022-09/duerre-klimakrise-entwicklung-daten-uebersicht"
+            >ZEIT Online</a
+          >
+          vorbei.
+          <br />
+          Meine Daten habe ich dem Dürremonitor des UfZ entnommen. Um mehr über die Situation in
+          ganz Deutschland zu erfahren, lohnt es sich, der
+          <a href="https://www.ufz.de/index.php?de=37937">offiziellen Website</a>
+          einen Besuch abzustatten.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="nav">
+        <button onclick="on()"><img class="side" src="/legende.png" alt="index button" /></button>
+        <a href="./indexprozess.html">Prozess</a>
+      </div>
+      <div class="jahr">
+        <div class="monat" id="januar">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="februar">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="märz">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="april">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="mai">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="juni">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="juli">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="august">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="september">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="oktober">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="november">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monat" id="dezember">
+          <div class="farbe">
+            <div class="farbe">
+              <div class="farbe">
+                <div class="farbe"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slidecontainer">
+        <p>1951</p>
+        <input type="range" min="0" max="99" value="0" class="slider" id="myRange" />
+        <p>2051</p>
+        <span class="range-value"></span>
+      </div>
+    </div>
+  </body>
+</html>

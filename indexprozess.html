@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wie steht es um meine Nerven?</title>
+    <link rel="stylesheet" href="styleprozess.css" />
+    <script src="mainprozess.js" defer></script>
+  </head>
+
+  <body>
+    <div class="article" id="overlay">
+      <div onclick="off()">
+        <button onclick="on()"><img class="side" src="/legende.png" alt="index button" /></button>
+      </div>
+      <div class="text">
+        <span class="wie">Wie</span><br /><span class="steht">steht es</span><br /><span
+          class="Leipzig"
+          >um meine</span
+        ><br /><span class="boden">Nerven?</span>
+        <p>
+          Da es sich hierbei um eines meiner ersten Coding- Projekte handelt, wollte ich gern meinen
+          Prozess dokumentieren. Dafür habe ich mich jede Stunde gefragt, was meine überwiegende
+          Stimmung war und das ganze Farbig codiert. Blau bedeutet dabei, dass ich frustriert bin
+          und pink steht für Euphorie. Dieses Projekt war ein Auf und Ab der Gefühle. Ständig stand
+          ich vor Problemen, die es zu lösen galt - aber wie?! Umso schöner war es dann, wenn ich
+          eine Lösung gefunden hatte.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="nav">
+        <button onclick="on()"><img class="side" src="/legende.png" alt="index button" /></button>
+        <a href="/index_boden.html">Ergebnis</a>
+      </div>
+      <div class="tag" id="days">
+        <div class="stunde" id="eins"></div>
+        <div class="stunde" id="zwei"></div>
+        <div class="stunde" id="drei"></div>
+        <div class="stunde" id="vier"></div>
+        <div class="stunde" id="fünf"></div>
+        <div class="stunde" id="sechs"></div>
+        <div class="stunde" id="sieben"></div>
+        <div class="stunde" id="acht"></div>
+        <div class="stunde" id="neun"></div>
+        <div class="stunde" id="zehn"></div>
+        <div class="stunde" id="elf"></div>
+        <div class="stunde" id="zwölf"></div>
+      </div>
+      <div class="slidecontainer">
+        <p>Montag</p>
+        <input type="range" min="0" max="4" value="0" class="slider" id="myRange" />
+        <p>Freitag</p>
+        <span class="range-value"></span>
+      </div>
+    </div>
+  </body>
+</html>

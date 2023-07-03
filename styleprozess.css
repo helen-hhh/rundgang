@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Karrik;
+  src: url(Karrik-Regular.otf);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: Karrik;
+  background-color: #fff0dc;
+}
+
+.container {
+  position: relative;
+}
+
+.side {
+  position: relative;
+  top: 0.4rem;
+  left: 5rem;
+}
+.nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.nav a {
+  padding: 2%;
+  color: black;
+  text-decoration: none;
+}
+
+.nav button {
+  padding: 2%;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  outline: inherit;
+  display: flex;
+}
+
+.nav img {
+  width: 25%;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 35%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff0dc;
+  z-index: 3;
+  font-family: 'Inter', sans-serif;
+}
+
+#overlay button {
+  padding: 2%;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  outline: inherit;
+  display: flex;
+}
+
+#overlay img {
+  width: 25%;
+  cursor: pointer;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+}
+
+.article button {
+  position: absolute;
+  z-index: 1;
+}
+
+.text {
+  column-count: 2;
+  column-gap: 40px;
+  position: absolute;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  margin-top: 4%;
+  font-size: 14px;
+  color: black;
+}
+
+.text span {
+  font-family: Karrik;
+  font-size: 37px;
+}
+
+.text p a {
+  color: black;
+}
+
+.wie {
+  padding-left: 15%;
+}
+
+.steht {
+  padding-left: 53%;
+}
+
+.boden {
+  padding-left: 37%;
+}
+
+.tag {
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.stunde {
+  width: 12%;
+  height: 100%;
+}
+
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: absolute;
+  z-index: 9;
+  margin-top: 90vh;
+}
+
+.slidecontainer p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 70px;
+  margin-left: 70px;
+  font-size: xx-large;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 76%;
+  /* Full-width */
+  height: 5px;
+  /* Specified height */
+  background: black;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  -webkit-transition: 0.2s;
+  transition: all;
+  /* 0.2 seconds transition on hover */
+  margin: 0px;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 18px;
+  /* Set a specific slider handle width */
+  height: 18px;
+  /* Slider handle height */
+  border-radius: 50%;
+  background: black;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
